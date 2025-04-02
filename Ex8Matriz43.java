@@ -20,7 +20,7 @@ public  class Ex8Matriz43{
             }
         }
         
-        //Quantodade ventida por produto
+        //Quantdade vendida por produto
         for(j = 0; j < 3; j++){
             for(i = 0; i < 4; j++){
                 totalProdutos[j] = totalProdutos[j] + vendas[i][j];
