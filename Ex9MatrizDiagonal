@@ -1,0 +1,37 @@
+package com.mycompany.aulavetores;
+import javax.swing.JOptionPane;
+
+public class Ex9MatrizDiagonal {
+    public static void main(String[]arge){
+        
+        int matriz[][] = new int [4][4];
+        int i, j;
+        int diagonal = 1;
+        String resultado = " ";
+        
+        for (i = 0; i < 4; i++){
+            for (j = 0; j < 4; j++){
+                
+                if(i == j){
+                    matriz[i][j] = diagonal;
+                    diagonal = diagonal * 4;
+                    
+
+                }
+                else{  
+                    matriz[i][j] = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor para atribuir a matriz"));
+                }
+            }
+        }
+       
+        for (i = 0; i < 4; i++){
+            for (j = 0; j < 4; j++){
+                resultado = resultado + matriz [i][j] + " \t ";
+            }
+            resultado = resultado + " \n ";
+        }
+        
+        JOptionPane.showMessageDialog(null, resultado);
+    }
+    
+}
